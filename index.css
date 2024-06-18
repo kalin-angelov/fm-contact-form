@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: hsl(148, 38%, 91%);
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+}
+
+label, input, textarea {
+    display: block;
+}
+
+span {
+    color: rgb(12, 125, 105);
+}
+
+.form-container {
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    display: block;
+    margin: 30px calc((100vw - 345px) / 2);
+    padding: 30px 25px;
+
+    .personal-info {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .input-box, .input-box-email {
+        width: 245px;
+        height: 52px;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 0 24px;
+        border-color: hsl(186, 15%, 59%);
+    }
+
+    .input-box:hover, .input-box-email:hover {
+        border-color: hsl(169, 82%, 27%);
+    }
+
+    .query-header {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .query-box-enquiry, .query-box-request {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+
+        height: 52px;
+        border-radius: 10px;
+        border: 1px solid hsl(186, 15%, 59%);
+        padding: 0 26px;
+        margin-bottom: 15px;
+
+        .radio-btn {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .query-label {
+            cursor: pointer;
+        }
+    }
+
+    .textarea-label {
+        padding: 13px 0 10px 0;
+    }
+
+    textarea {
+        width: 245px;
+        height: 216px;
+        border-radius: 10px;
+        padding: 24px;
+        border-color: hsl(186, 15%, 59%);
+    }
+
+    textarea:hover {
+        border-color: hsl(169, 82%, 27%);
+    }
+
+    .checkbox-box {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+
+        margin-top: 46px;
+
+        .checkbox {
+            width: 22px;
+            height: 22px;
+        }
+
+        .checkbox-label {
+            line-height: 1.5;
+        }
+    }
+
+    button {
+        border: unset;
+        border-radius: 10px;
+        width: 295px;
+        height: 52px;
+        color: white;
+        background-color: #0c7d69;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 46px;
+    }
+
+    .error-message {
+        padding: 10px 0;
+        color: red;
+        display: none;
+    }
+
+}
+
+.completed {
+    display: none;
+    position: absolute;
+    top: 22px;
+    margin: 0 calc((100vw - 350px) / 2);
+    width: 305px;
+    height: 69px;
+    background-color: #2a4244;
+    border-radius: 15px;
+    color: white;
+    padding: 28px 22px;
+
+    figure {
+        margin-bottom: 14px;
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
+
+    .message {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .form-container {
+        width: 700px;
+        margin: 127px calc((100vw - 735px) / 2);
+        padding: 44px 40px;
+    
+        .name-container {
+            display: flex;
+            gap: 18px;
+
+            .input-box {
+                width: 292px;
+                font-size: 20px;
+            }
+
+        }
+
+        .personal-info {
+            font-size: 18px;
+        }
+
+        .input-box-email {
+            width: 650px;
+            font-size: 20px;
+        }
+        
+        .query-header {
+            font-size: 18px;
+        }
+
+        .query-container {
+            display: flex;
+            gap: 16px;
+
+            .query-box-enquiry, .query-box-request {
+                font-size: 18px;
+                width: 305px;
+                padding: 0 26px;
+                margin-bottom: 15px;
+            }
+        }
+    
+        .textarea-label {
+            font-size: 18px;
+        }
+    
+        textarea {
+            width: 650px;
+            height: 82px;
+            font-size: 20px;
+        }
+    
+        .checkbox-box {
+            .checkbox-label {
+                font-size: 18px;
+            }
+        }
+    
+        button {
+            width: 700px;
+            height: 60px;
+            font-size: 20px;
+        }
+
+        button:hover  {
+            background-color: #063f36;
+        }
+    }
+
+    .completed {
+        margin: 0 calc((100vw - 450px) / 2);
+        width: 422px;
+    }
+}
