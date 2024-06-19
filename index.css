@@ -20,18 +20,17 @@ span {
 .form-container {
     border-radius: 15px;
     background-color: hsl(0, 0%, 100%);
-    display: block;
     margin: 30px calc((100vw - 345px) / 2);
     padding: 30px 25px;
 
     .personal-info {
-        padding-top: 30px;
+        padding-top: 27px;
         padding-bottom: 15px;
     }
 
     .input-box, .input-box-email {
         width: 245px;
-        height: 52px;
+        height: 50px;
         border: 1px solid;
         border-radius: 10px;
         padding: 0 24px;
@@ -44,7 +43,7 @@ span {
 
     .query-header {
         padding-top: 30px;
-        padding-bottom: 20px;
+        padding-bottom: 18px;
     }
 
     .query-box-enquiry, .query-box-request {
@@ -53,7 +52,7 @@ span {
         justify-content: start;
         gap: 20px;
 
-        height: 52px;
+        height: 50px;
         border-radius: 10px;
         border: 1px solid hsl(186, 15%, 59%);
         padding: 0 26px;
@@ -91,11 +90,11 @@ span {
         align-items: center;
         gap: 22px;
 
-        margin-top: 46px;
+        margin-top: 43px;
 
         .checkbox {
-            width: 22px;
-            height: 22px;
+            width: 18px;
+            height: 18px;
         }
 
         .checkbox-label {
@@ -112,7 +111,7 @@ span {
         background-color: #0c7d69;
         font-size: 16px;
         cursor: pointer;
-        margin-top: 46px;
+        margin-top: 42px;
     }
 
     .error-message {
@@ -138,8 +137,7 @@ span {
     figure {
         margin-bottom: 14px;
         display: inline-block;
-        width: 22px;
-        height: 22px;
+        
         img {
             width: inherit;
             height: inherit;
@@ -155,6 +153,7 @@ span {
 @media screen and (min-width: 1024px) {
     .form-container {
         width: 700px;
+        height: 774;
         margin: 127px calc((100vw - 735px) / 2);
         padding: 44px 40px;
     
@@ -166,20 +165,11 @@ span {
                 width: 292px;
                 font-size: 20px;
             }
-
-        }
-
-        .personal-info {
-            font-size: 18px;
         }
 
         .input-box-email {
             width: 650px;
             font-size: 20px;
-        }
-        
-        .query-header {
-            font-size: 18px;
         }
 
         .query-container {
@@ -194,25 +184,15 @@ span {
             }
         }
     
-        .textarea-label {
-            font-size: 18px;
-        }
-    
         textarea {
             width: 650px;
             height: 82px;
             font-size: 20px;
         }
     
-        .checkbox-box {
-            .checkbox-label {
-                font-size: 18px;
-            }
-        }
-    
         button {
             width: 700px;
-            height: 60px;
+            height: 57px;
             font-size: 20px;
         }
 
